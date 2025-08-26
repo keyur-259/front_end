@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 50px;
+            width: 100px;
+            background-color: aqua;
+            margin: 100px auto;
+
+        }
+
+        .zoom {
+            height: 50px;
+            width: 100px;
+
+            display: content;
+            border: 2px solid aqua;
+            transform: translate(-1.5px,-1.5px);
+            /* transform: scale(1); */
+
+            transition: .5S;
+            /* margin: -1px -2px; */
+        }
+
+        .main:hover .zoom {
+            /* border: 2px solid aqua; */
+            transform: scale(1.2);
+            box-shadow: 0px 0px 4px black;
+            
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <div class="main">
+    <div class="zoom">
+    </div>
+    </div>
+</body>
+
+</html>

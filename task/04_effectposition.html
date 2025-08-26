@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height:200px;
+            width: 200px;
+            /* background-image: url(/image/univers.jpg); */
+            border: 2px solid;
+            margin: 300px auto;
+             position: relative;
+             overflow: hidden;
+            
+        }
+        .right{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(169, 150, 150, 0.277);
+            
+           position: absolute;
+           left: 200px;
+           bottom: 200px;
+           transition: .5s;
+        }
+        .left{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(169, 150, 150, 0.277);
+            position: absolute;
+            top: 200px;
+            right: 200px;
+            transition: .5s;
+        }
+       
+        .main:hover .right{
+              /* position: absolute; */
+              bottom: 0px;
+              left: 0px;
+        }
+        .main:hover .left{
+              /* position: absolute; */
+              top: 0px;
+              right: 0px;
+             
+              
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="right"></div>
+        <div class="left"></div>
+    </div>
+</body>
+</html>

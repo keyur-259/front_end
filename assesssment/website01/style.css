@@ -1,0 +1,344 @@
+#main {
+    width: 100%;
+    height: 100vh;
+
+}
+
+#part-1 {
+    width: 100%;
+    height: 500px;
+    background: url('/website01/img/laptopman.jpg');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    /* margin-top:  -10px; */
+}
+
+#part-1 .left {
+
+    width: 25%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.192);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left .parantbox {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fff;
+}
+
+.parantbox .box {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fff;
+    margin: 1vw 1vw;
+
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.icons i {
+    background: #fff;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#part-1 .right {
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 75%;
+    height: 100%;
+    margin-right: 20px;
+
+}
+
+.right .rightbox {
+
+
+    width: 400px;
+    height: 400px;
+    background: #ffffff70;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 2vw;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 7px black;
+
+}
+
+.rightbox p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: cursive;
+}
+
+#sec-part {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+}
+
+#sec-part .left2 {
+    width: 24.7%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.192);
+}
+
+#sec-part .right2 {
+    overflow: hidden;
+    width: 75.3%;
+    height: 100%;
+    display: flex;
+
+
+}
+
+#sec-part .leftabout {
+
+    width: 50%;
+    height: 100%;
+    padding: 3vw 8vw;
+
+    font-family: arial;
+
+}
+
+.leftabout p {
+    width: 60%;
+    margin-bottom: 2vw;
+    margin-top: 3vw;
+}
+
+#sec-part .rightabout {
+    font-family: arial;
+
+    width: 50%;
+    height: 100%;
+    /* background: green; */
+
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    /* margin-top: 20px 50px ; */
+    margin-bottom: 2vw;
+    margin-top: 3vw;
+
+}
+
+.rightabout p {
+    width: 60%;
+    margin-bottom: 2vw;
+    margin-top: 3vw;
+}
+
+/* third part start  */
+#third-part {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+#third-part .left3 {
+    width: 24.7%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.192);
+}
+
+#third-part .right3 {
+    width: 75.3%;
+    height: 100%;
+}
+
+.right3 .rightborder {
+    width: 850px;
+    height: 400px;
+    border: 1px solid;
+    margin-left: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.right3 .rightboximg {
+    width: 850px;
+    height: 400px;
+    border: 1px solid;
+    margin: 1vw 1vw;
+    margin-top: -1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightboximg h2 {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.rightboximg .imgourwork {
+    display: flex;
+}
+
+.imgourwork img {
+    height: 280px;
+    width: 200px;
+    margin: 15px 30px;
+}
+
+/* fourth part  */
+#fourth-part {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+#fourth-part .left4 {
+    width: 24.7%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.192);
+}
+
+#fourth-part .right4 {
+    width: 75.3%;
+    height: 100%;
+}
+.right4 .rightclient{
+    margin-left: 100px;
+}
+.rightclient p{
+    width: 80%;
+    word-spacing: .3vw;
+    letter-spacing: .1vw;
+    font-family: sans-serif;
+    margin: 40px 0px;
+}
+.rightclient table{
+    margin-left: 1px;
+    
+}
+.table td {
+    border: 1px solid #707172;
+}
+/* fifth part open  */
+#fifth-part{
+     width: 100%;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+}
+#fifth-part .left5{
+    width: 24.7%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.192);
+}
+#fifth-part .right5{
+    width: 75.3%;
+    height: 100%;
+    display: flex;
+}
+.right5 .leftform {
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgb(142, 136, 136);
+    margin-left: 50px;
+}
+
+.leftform .left-child {
+    width: 400px;
+    height: 400px;
+    border: 1px solid gray;
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftform h2 {
+    margin: 50px 50px;
+    color: rgb(2, 106, 147);
+    font-weight: 100;
+}
+
+.left-child p {
+    width: 80%;
+    margin: 0px 50px;
+    margin-bottom: 3vw;
+    line-height: 1.9vw;
+    letter-spacing: 1px;
+    font-family: cursive;
+}
+
+.rightform {
+    width: 500;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.rightform input {
+
+    padding: 1vw 5vw;
+    
+    border: 0;
+    border-bottom: .1px solid #dadada;
+    outline: none;
+    font-size: 20px;
+    margin: 0vw 0vw 2vw 15vw;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+    padding: 0vw 5vw;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    border-bottom: .1px solid #dadada;
+    margin: 0vw 0vw 2vw 15vw;
+}
+
+.rightform button {
+
+    padding: .5vw 2vw;
+    cursor: pointer;
+    margin-right: -13vw;
+    background: transparent;
+    border: 0;
+    border-bottom: .1px solid gray;
+    margin: 0vw 0vw 0vw 35vw;
+    font-size: 20px;
+
+}
+
+button:hover {
+    background: rgba(128, 128, 128, 0.31);
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .main {
+            height: 200px;
+            width: 200px;
+            background-color: lightcoral;
+            margin: 200px auto;
+            overflow: hidden;
+            
+        }
+
+        .image {
+            background-image: url(/image/univers.jpg);
+            height: 300px;
+            width: 400px;
+            background-color: rgba(5, 5, 58, 0.482);
+            margin-left: -10px;
+            transition: 0.5s;
+        }
+
+        .main:hover .image {
+            transform: translatex(9px);
+        }
+
+        .text {
+            height: 150px;
+            width: 150px;
+            /* background-color: black; */
+            /* border: 5px solid white; */
+            transform: translate(20px, 20px);
+            
+           
+        }
+
+        .image:hover .text {
+            border: 5px solid white;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="image">
+            <div class="text"> new arrival</div>
+        </div>
+    </div>
+</body>
+
+</html>
