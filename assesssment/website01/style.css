@@ -7,7 +7,7 @@
 #part-1 {
     width: 100%;
     height: 500px;
-    background: url('/website01/img/laptopman.jpg');
+    background: url('/img/laptopman.jpg');
     background-position: center;
     background-size: cover;
     object-fit: cover;
