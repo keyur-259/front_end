@@ -1,0 +1,378 @@
+@media only screen and (max-width:1260px) {
+    .sec1 .sec1-img {
+        padding: 30px 0;
+    }
+
+    #menu .right .right-p {
+        font-size: clamp(16px, 1.4vw, 20px);
+    }
+
+    /* footer open  */
+    #footer .logo-right-foot {
+        width: 30%;
+    }
+
+    #footer .right-foot-p {
+        width: 85%;
+    }
+
+    #footer .img-wrap {}
+
+    #footer .address .add-p {
+        width: 50%;
+    }
+
+    /* footer close  */
+}
+
+@media only screen and (max-width:992px) {
+    .sec3-content .sec3-p {
+        width: 100%;
+    }
+
+    /* #menu .menu-down .row {
+        flex-direction: column;
+    } */
+
+    /* #menu .menu-down .col-5 {
+        width: 100%;
+        margin: 0 auto;
+    } */
+
+    #menu .right .right-h3 {
+        font-size: clamp(20px, 2vw, 50px);
+        font-weight: 700;
+
+    }
+
+    #menu .right .right-p {
+        font-size: clamp(12px, 1.4vw, 25px);
+    }
+
+    /* store open  */
+    .store-up .store-dec {
+
+        width: 80%;
+    }
+
+    .store-content .store-content-p {
+        width: 80%;
+    }
+
+    /* store close  */
+    /* company open  */
+    #company .company-content .company-p {
+        width: 98%;
+    }
+
+    /* company close  */
+    /* map open  */
+    #map .contact-us-form input {
+
+
+        padding: 5px 0px;
+    }
+
+    #map .contact-us-form textarea {
+
+        height: 100px;
+    }
+
+    /* map close  */
+    /* footer open  */
+    #footer .img-wrap {
+        width: 30%;
+    }
+
+    #footer .address .add-p {
+        width: 75%;
+    }
+
+    #footer .logo-right-foot {
+        height: 35px;
+        width: 35%;
+    }
+
+    #footer .right-foot-p {
+        width: 100%;
+    }
+
+    /* footer close  */
+}
+
+@media only screen and (max-width:760px) {
+    .sec1 .sec1-p {
+        width: 50%;
+    }
+
+    #sec3 .row {
+        display: block;
+    }
+
+    #sec3 .row .col-4 {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #sec3 .row .col-6 {
+        width: 100%;
+    }
+
+    /* menu open  */
+    #menu .menu-down .row {
+        flex-direction: column;
+    }
+
+    #menu .menu-down .col-5 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .menu-up .menu-up-p {
+        width: 90%;
+    }
+
+    #menu .right .right-p {
+
+        font-size: clamp(14px, 1vw, 22px);
+    }
+
+    /* menu close  */
+
+
+    /* store open  */
+    #store .row {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+
+    #store .row .col {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+
+
+    /* store close  */
+    /* company open  */
+    #company .row {
+        flex-direction: column;
+    }
+
+    #company .row .col-5 {
+        width: 100%;
+    }
+
+    #company .company-content {
+        text-align: center;
+    }
+
+    #company .company-content .company-p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* company close  */
+    
+    /* footer start  */
+    #footer .back-foot {
+        flex-direction: column;
+    }
+
+    #footer .foot-1 {
+        width: 80%;
+        margin: 0 auto;
+        /* display: none; */
+    }
+
+    #footer .foot-1 .img-wrap {
+        height: 110px;
+        width: 20%;
+        /* display: none; */
+    }
+
+    #footer .foot-2 {
+        margin: 0 auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    #footer .foot-3 {
+
+        text-align: center;
+        width: 100%;
+
+    }
+
+    #footer .logo-right-foot {
+        display: none;
+    }
+
+    #footer .foot-icon {
+        text-align: center;
+    }
+
+    #footer .foot-icon * {
+
+        margin: 0px 20px;
+    }
+
+    /* footer close  */
+}
+
+@media only screen and (max-width:576px) {
+    .nav-ul {
+        display: none;
+    }
+
+    .nav .icon {
+        display: flex;
+        gap: 2px;
+    }
+
+    .nav .icon .bar {
+
+        display: block;
+    }
+
+    .icon .search {
+        display: none;
+    }
+
+    .sec1 .sec1-h1 {
+        width: 60%;
+    }
+
+    #sec2 .row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #sec2 .row .col {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* sec3 open  */
+    #sec3 .row .col-4 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* sec3 close */
+    /* menu open  */
+    #menu .menu-down .col-5 {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    /* menu close  */
+
+    /* store open  */
+    .store-up .store-dec {
+
+        width: 100%;
+    }
+
+    .store-content .store-content-p {
+        width: 90%;
+    }
+
+    #store .row .col {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* store close  */
+    /* map open  */
+    #map .row {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    #map .row .col-5 {
+        width: 100%;
+    }
+
+    #map .map {
+        width: 90%;
+        height: 500px;
+    }
+
+    #map .contact * {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    #map .con-h1 {
+        padding: 10px 0px;
+        font-size: clamp(25px, 3.1vw, 50px);
+
+    }
+
+    #map .contact-us-form input {
+
+        font-size: clamp(16px, 1.5vw, 21px);
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    #map .contact-us-form textarea {
+        width: 100%;
+    }
+
+    #map .contact-us-form .con-div-btn {
+        width: 100%;
+    }
+
+    #map .contact-us-form .con-btn {
+        width: 40%;
+        /* padding: 0px 0px; */
+        font-size: clamp(14px, 1.1vw, 20px);
+    }
+
+    /* map close  */
+    /* footer open  */
+    #footer .foot-1 .img-wrap {
+        height: 100px;
+        width: 25%;
+        /* display: none; */
+    }
+
+    #footer .foot-2 {
+
+        width: 90%;
+    }
+
+    #footer .foot-1 {
+        width: 70%;
+    }
+
+    /* footer close  */
+}
+
+@media only screen and (max-width:370px) {
+
+    #menu .right .right-p {
+
+        font-size: clamp(10px, .6vw, 16px);
+    }
+
+    #menu .right .rightbtn {
+        /* font-size: clamp(10px, 1.2vw, 20px); */
+        padding: 5px 8px;
+        /* background-color: #f2cd5d; */
+    }
+
+    /* footer open  */
+    /* #footer .add-p{
+        width: 100%;
+    }
+    #footer .foot-1 {
+        width: 100%;
+    } */
+    /* footer close  */
+
+}
