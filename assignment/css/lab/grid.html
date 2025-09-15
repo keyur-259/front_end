@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: rgba(245, 245, 245, 1);
+            /* light gray */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: rgba(40, 40, 40, 0.95);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            margin: 8px 0 5px;
+            font-size: 18px;
+            color: rgba(25, 25, 112, 0.95);
+            /* navy */
+        }
+
+        .card p {
+            font-size: 16px;
+            font-weight: bold;
+            color: rgba(178, 34, 34, 0.95);
+            /* firebrick red */
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>New Clothing Collection</h1>
+    <div class="grid">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT5b_PwSpqLdK_ukv_IN4S2-vizxU2WluKHCH2BZoQt4mpyJ3LHOBawUVmkBjMXK7R07-8how1aZZNncEvDvwliToaN3EVI4BGH7sCfMatJqUo-6gXZwguP_Q"
+                alt="T-Shirt">
+            <h3>Cotton T-Shirt</h3>
+            <p>$19.99</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTwoY5NKSHPrShLzeB1FYR7BozFTlM6RevNL8sqzGRklUf2QB7d6j52VpHBe8_MSf7vJpwwJ9Hr-Q9h8_7liBdXlcc6GPUSCwYr6M4TH-t5"
+                alt="Shirt">
+            <h3>Formal Shirt</h3>
+            <p>$29.99</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcST_nWEgEmJoB_a-XX1PlkGIQtOxuBT0soCv2EsRtrlaMWUy7dUeV_lKNTUVKaV6p3L6S7Wavzvo3phWGGP5fsGROW363r2_UHLuuNwTLRsxyQwx4Rg5daojg"
+                alt="Jeans">
+            <h3>Slim Fit Jeans</h3>
+            <p>$49.99</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS2bsS4jIAnFOCnSSCqMwqTChUDFwxVoI5d-TZSl58jQj-XwUI2Yt8kwjoFCiIH5D8y0WAc0c8PDR7ENB8CRfkK7cBi5eAIMQ"
+                alt="Jacket">
+            <h3>Leather Jacket</h3>
+            <p>$99.99</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSOm2304rcKI6Sdu2O4MkiUeTC4Lg43Dy66sr9yIa4LxxdVPhVMte5f4s5u_5IApS1MB55rHNHmCfzm2bWOQsnNhgGAIw_OafrIdg_2giM"
+                alt="Kurta">
+            <h3>Traditional Kurta</h3>
+            <p>$39.99</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTRhse18hW-wBWVul8XTHoFcdn4n3FzWaEpTFfGrPbpBCF76Bo53daBU4TBdrANrge_k3HA0g1nwOPjI-QCSMnkwaRaIVuo80gnxZW9bI4"
+                alt="Saree">
+            <h3>Designer Saree</h3>
+            <p>$149.99</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTQfcY53RHfgIxYptV10UWrIOGQDoO06VOarVHu6Sw7EfMDKYR6nbIx1F6W_Yli3gTJd9TO2Knp61ofrmSpF3mz8t534Wtk64kx9xJtOu4DqIUgYKjHuQdIdg"
+                alt="Hoodie">
+            <h3>Casual Hoodie</h3>
+            <p>$34.99</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQViyHdV17kGOb5Njd9fQQdcwJfIZgQdfeBkGE8yJt6hEEFQWJaGXopnWsEXZaZziN3YxuOkDwvZ7i_ODPKIz9H1L3g5f2w076GTMihpK1mOBM3qSKYfUYb"
+                alt="Shorts">
+            <h3>Summer Shorts</h3>
+            <p>$24.99</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQQbJu-mTROX0zvwUolf7dlYdMga_S9ULXqUEflNCM-vabi1mAqTEtrdAHSZGd1X-trnP4VZnMZZHjlzx7qPZvKeBBPcyXG9471wR6MXWM"
+                alt="Blazer">
+            <h3>Classic Blazer</h3>
+            <p>$119.99</p>
+        </div>
+    </div>
+</body>
+
+</html>

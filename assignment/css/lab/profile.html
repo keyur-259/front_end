@@ -1,20 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Profile Card</title>
     <style>
-        .main{
-            height: 200px;
-            background-image: url(https://images.pexels.com/photos/31009096/pexels-photo-31009096.jpeg);
-            background-size: 100% 100%;
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #eef6fb;
+            font-family: sans-serif;
+        }
+
+        .card {
+            width: 320px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, .1);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .banner {
+            height: 110px;
+            background: linear-gradient(135deg, #6a61ff, #2fb0ff);
+            position: relative;
+        }
+
+        .pic {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            padding: 4px;
+            background: #f6f6f6;
+            position: absolute;
+            left: 50%;
+            bottom: -48px;
+            transform: translateX(-50%);
+        }
+
+        .content {
+            padding: 72px 20px 22px
+        }
+
+        .name {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700
+        }
+
+        .role {
+            margin: 6px 0 10px;
+            font-size: 13px;
+            color: #555
+        }
+
+        .bio {
+            margin: 0 0 18px;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.4
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px
+        }
+
+        .btn {
+            min-width: 110px;
+            padding: 9px 16px;
+            border-radius: 999px;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            transition: .2s
+        }
+
+        .connect {
+            background: linear-gradient(90deg, #ff7a59, #ff4a8d);
+            color: #fff
+        }
+
+        .connect:hover {
+            transform: scale(1.05);
+            opacity: .9
+        }
+
+        .msg {
+            background: #fff;
+            border: 1px solid #ddd;
+            color: #333
+        }
+
+        .msg:hover {
+            transform: scale(1.03)
         }
     </style>
 </head>
+
 <body>
-     <div class="main">
-            SCCSCSC
-     </div>
+    <div class="card">
+        <div class="banner"><img class="pic"
+                src="https://images.unsplash.com/photo-1622519407650-3df9883f76a5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Riya"></div>
+        <div class="content">
+            <h3 class="name">keyur talaviya</h3>
+            <div class="role"> Student</div>
+            <p class="bio">I web devlopment,web design and  frontend devlopment.</p>
+            <div class="actions">
+                <button class="btn connect">Connect</button>
+                <button class="btn msg">Message</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
