@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Right Aligned Triangle</title>
+</head>
+<body>
+  <script>
+    let rows = 5; // total rows
+
+    for (let i = 1; i <= rows; i++) {
+      // first print spaces (columns before stars)
+      for (let j = 1; j <= rows - i; j++) {
+        document.write("&nbsp;&nbsp;");
+      }
+
+      // then print stars (remaining columns)
+      for (let k = 1; k <= i; k++) {
+        document.write("*");
+      }
+
+      // new line after each row
+      document.write("<br>");
+    }
+  </script>
+</body>
+</html>

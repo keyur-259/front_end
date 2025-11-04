@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bootstrap assesment</title>
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Custom styling */
+        body {
+            background: #f7f9fc;
+        }
+
+        .brand {
+            font-weight: 700;
+            letter-spacing: .5px;
+        }
+
+        .hero {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.6));
+            padding: 2rem 0;
+        }
+
+        .form-error {
+            color: #d9534f;
+            font-size: .9rem;
+            margin-top: .25rem;
+            display: none;
+        }
+
+        .is-invalid-input {
+            border-color: #d9534f !important;
+            box-shadow: none !important;
+        }
+
+        .success-alert {
+            display: none;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        /* Make carousel images a consistent height */
+        .carousel-item img {
+            object-fit: cover;
+            height: 300px;
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+            .carousel-item img {
+                height: 420px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-sm">
+        <nav class="container navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="/img/complain_17652725.png"
+                    alt="logo" width="44" height="44" class="rounded">
+                <div>
+                    <div class="brand">Navbar</div>
+                    <small class="text-muted">Customer complain</small>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#formSection">Submit Complaint</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#submissionsSection">View Submissions</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#aboutSection">About</a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero / Carousel -->
+    <!-- <section class="hero">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="mb-3">Faster, Paperless Customer Interaction</h1>
+                    <p class="lead text-muted">Submit a complaint, and our team will track and resolve it. This demo
+                        saves submission data to your browser's local storage.</p>
+                    <p>
+                        <a href="#formSection" class="btn btn-primary me-2">Submit Complaint</a>
+                        <a href="#submissionsSection" class="btn btn-outline-secondary">View Submissions</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-5">
+                    <div id="homeCarousel" class="carousel slide rounded shadow-sm" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1400&auto=format&fit=crop"
+                                    class="d-block w-100" alt="service">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1400&auto=format&fit=crop"
+                                    class="d-block w-100" alt="team">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1400&auto=format&fit=crop"
+                                    class="d-block w-100" alt="support">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Main content container -->
+    <main class="container my-5">
+
+        <!-- Form Section -->
+        <section id="formSection" class="mb-5">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">Customer Complaint Form</h3>
+
+                    <!-- Success alert -->
+                    <div id="successAlert" class="alert alert-success success-alert" role="alert">
+                        Submission saved successfully!
+                    </div>
+
+                    <form id="complaintForm" novalidate>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter full name"
+                                    required>
+                                <div id="error-name" class="form-error">Name is required.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="10-digit phone number"
+                                    maxlength="10" inputmode="numeric" pattern="\d{10}" required>
+                                <div id="error-phone" class="form-error">Phone must be exactly 10 digits.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="example@domain.com"
+                                    required>
+                                <div id="error-email" class="form-error">Please enter a valid email address.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="vehicle" class="form-label">Vehicle</label>
+                                <select id="vehicle" class="form-select" required>
+                                    <option value="">-- Select vehicle --</option>
+                                    <option>Car</option>
+                                    <option>Bike</option>
+                                    <option>Truck</option>
+                                    <option>Other</option>
+                                </select>
+                                <div id="error-vehicle" class="form-error">Please select a vehicle.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="complaint" class="form-label">Complaint</label>
+                                <textarea id="complaint" class="form-control" rows="4" placeholder="Describe the issue"
+                                    required></textarea>
+                                <div id="error-complaint" class="form-error">Complaint cannot be empty.</div>
+                            </div>
+
+                            <div class="col-12 d-flex gap-2">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="button" id="resetBtn" class="btn btn-outline-secondary">Reset</button>
+                                <button type="button" id="clearAll" class="btn btn-danger ms-auto">Clear All
+                                    Submissions</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Submissions Section (Table) -->
+        <section id="submissionsSection">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">Submissions</h3>
+
+                    <div class="table-wrapper">
+                        <table class="table table-striped table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th>Vehicle</th>
+                                    <th>Complaint</th>
+                                </tr>
+                            </thead>
+                            <tbody id="submissionsTableBody">
+                                <!-- Filled dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bootstrap JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Key for localStorage
+        const STORAGE_KEY = 'hashcrypt_submissions_v1';
+
+        // DOM elements
+        const form = document.getElementById('complaintForm');
+        const successAlert = document.getElementById('successAlert');
+        const submissionsTableBody = document.getElementById('submissionsTableBody');
+        const resetBtn = document.getElementById('resetBtn');
+        const clearAllBtn = document.getElementById('clearAll');
+
+        // Input refs
+        const inputs = {
+            name: document.getElementById('name'),
+            phone: document.getElementById('phone'),
+            email: document.getElementById('email'),
+            vehicle: document.getElementById('vehicle'),
+            complaint: document.getElementById('complaint')
+        };
+
+        const errors = {
+            name: document.getElementById('error-name'),
+            phone: document.getElementById('error-phone'),
+            email: document.getElementById('error-email'),
+            vehicle: document.getElementById('error-vehicle'),
+            complaint: document.getElementById('error-complaint')
+        };
+
+        // Helpers
+        function getSubmissions() {
+            try {
+                const raw = localStorage.getItem(STORAGE_KEY);
+                if (!raw) return [];
+                return JSON.parse(raw);
+            } catch (e) {
+                console.error('Error reading submissions from localStorage:', e);
+                return [];
+            }
+        }
+
+        function saveSubmissions(list) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+        }
+
+        function showSuccess(message = 'Submission saved successfully!') {
+            successAlert.textContent = message;
+            successAlert.style.display = 'block';
+            setTimeout(() => {
+                successAlert.style.display = 'none';
+            }, 3500);
+        }
+
+        // Basic validators
+        function validateEmail(value) {
+            // Simple but practical regex for email validation
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(value.trim());
+        }
+
+        function validatePhone(value) {
+            const digits = value.replace(/\D/g, '');
+            return digits.length === 10;
+        }
+
+        function clearErrorStates() {
+            Object.values(errors).forEach(el => el.style.display = 'none');
+            Object.values(inputs).forEach(inp => inp.classList.remove('is-invalid-input'));
+        }
+
+        function showError(field, message) {
+            errors[field].textContent = message;
+            errors[field].style.display = 'block';
+            inputs[field].classList.add('is-invalid-input');
+        }
+
+        // Render submissions table
+        function renderTable() {
+            const data = getSubmissions();
+            submissionsTableBody.innerHTML = '';
+
+            if (!data || data.length === 0) {
+                const tr = document.createElement('tr');
+                const td = document.createElement('td');
+                td.colSpan = 5;
+                td.className = 'text-center text-muted py-4';
+                td.textContent = 'No data available';
+                tr.appendChild(td);
+                submissionsTableBody.appendChild(tr);
+                return;
+            }
+
+            data.forEach(item => {
+                const tr = document.createElement('tr');
+
+                const tName = document.createElement('td');
+                tName.textContent = item.name;
+                tr.appendChild(tName);
+
+                const tPhone = document.createElement('td');
+                tPhone.textContent = item.phone;
+                tr.appendChild(tPhone);
+
+                const tEmail = document.createElement('td');
+                tEmail.textContent = item.email;
+                tr.appendChild(tEmail);
+
+                const tVehicle = document.createElement('td');
+                tVehicle.textContent = item.vehicle;
+                tr.appendChild(tVehicle);
+
+                const tComplaint = document.createElement('td');
+                tComplaint.textContent = item.complaint;
+                tr.appendChild(tComplaint);
+
+                submissionsTableBody.appendChild(tr);
+            });
+        }
+
+        // On submit
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            clearErrorStates();
+
+            const name = inputs.name.value.trim();
+            const phone = inputs.phone.value.trim();
+            const email = inputs.email.value.trim();
+            const vehicle = inputs.vehicle.value.trim();
+            const complaint = inputs.complaint.value.trim();
+
+            let valid = true;
+
+            // Validate name
+            if (!name) {
+                showError('name', 'Name is required.');
+                valid = false;
+            }
+
+            // Validate phone
+            if (!phone) {
+                showError('phone', 'Phone is required.');
+                valid = false;
+            } else if (!validatePhone(phone)) {
+                showError('phone', 'Phone must be exactly 10 digits.');
+                valid = false;
+            }
+
+            // Validate email
+            if (!email) {
+                showError('email', 'Email is required.');
+                valid = false;
+            } else if (!validateEmail(email)) {
+                showError('email', 'Please enter a valid email address.');
+                valid = false;
+            }
+
+            // Validate vehicle
+            if (!vehicle) {
+                showError('vehicle', 'Please select a vehicle.');
+                valid = false;
+            }
+
+            // Validate complaint
+            if (!complaint) {
+                showError('complaint', 'Complaint cannot be empty.');
+                valid = false;
+            }
+
+            if (!valid) {
+                // Scroll to first error for good UX
+                const firstError = document.querySelector('.is-invalid-input');
+                if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
+
+            // Save to localStorage
+            const submissions = getSubmissions();
+            submissions.push({
+                name,
+                phone: phone.replace(/\D/g, ''), // store digits-only
+                email,
+                vehicle,
+                complaint,
+                createdAt: new Date().toISOString()
+            });
+            saveSubmissions(submissions);
+
+            // Show success & reset
+            showSuccess();
+            form.reset();
+            renderTable();
+        });
+
+        // Reset button handler (client-side reset)
+        resetBtn.addEventListener('click', function () {
+            form.reset();
+            clearErrorStates();
+        });
+
+        // Clear all stored submissions
+        clearAllBtn.addEventListener('click', function () {
+            if (!confirm('Are you sure you want to clear all saved submissions? This cannot be undone.')) return;
+            localStorage.removeItem(STORAGE_KEY);
+            renderTable();
+            showSuccess('All submissions cleared.');
+        });
+
+        // Keep phone input digits-only as user types
+        inputs.phone.addEventListener('input', function () {
+            // remove non-digits
+            const digits = this.value.replace(/\D/g, '');
+            // limit to 10 digits
+            this.value = digits.slice(0, 10);
+            // hide phone error while they type
+            errors.phone.style.display = 'none';
+            this.classList.remove('is-invalid-input');
+        });
+
+        // Real-time validation option: hide error on change
+        Object.keys(inputs).forEach(key => {
+            inputs[key].addEventListener('input', function () {
+                if (this.classList.contains('is-invalid-input')) {
+                    this.classList.remove('is-invalid-input');
+                    errors[key].style.display = 'none';
+                }
+            });
+        });
+
+        // Initial render
+        document.addEventListener('DOMContentLoaded', function () {
+            renderTable();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col-3 {
+    width: 33.33%;
+}
+
+/* header start  */
+#header .back-img {
+    background-image: url(/image/header.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/* nav start  */
+
+#nav {
+    background-color: #fff7b1;
+    opacity: 0.749;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#nav .logo {
+    padding: 10px;
+}
+
+#nav .nav-ul {
+    padding-right: 20px;
+}
+
+#nav .nav-li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+#nav .nav-li a {
+    font-size: clamp(16px, 1.9vw, 25px);
+    color: #000000;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+#nav .icon {
+    display: none;
+}
+
+/* nav close  */
+#header .header-content {
+    padding: 150px 0px;
+    width: 50%;
+}
+
+#header .header-h1 {
+    font-size: clamp(40px, 8vw, 125px);
+    color: #fff7b1;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+}
+
+#header .header-p {
+    font-size: clamp(16px, 1.8vw, 30px);
+    color: #fff7b1;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding: 30px 0px;
+}
+
+#header .header-btn button {
+
+    border-radius: 4px;
+    background-color: #d87663;
+    border: none;
+    font-size: clamp(14px, 1.2vw, 25px);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+/* header close  */
+/* best seller open  */
+#best-seller {
+    background-image: url(/image/bestseller.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #fff7b1;
+    padding: 50px 0px;
+}
+
+#best-seller .best-h1 {
+    font-size: clamp(20px, 5vw, 75px);
+    color: #d87663;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+}
+
+#best-seller .best-p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: clamp(16px, 1.5vw, 25px);
+    color: #3a3a3a;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+/* card open  */
+#best-seller .card-row {
+    gap: 20px;
+}
+
+#best-seller .card {
+    padding: 30px 0px;
+}
+
+.card .card-content {
+
+    background-color: #d87663;
+    /* margin-top: -3px; */
+    padding: 10px;
+}
+
+.card .card-content .card-h3 {
+    font-size: clamp(18px, 2.5vw, 42px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+}
+
+.card-content .card-p {
+    width: 60%;
+    margin: 0 auto;
+    font-size: clamp(14px, 0.8vw, 17px);
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+/* card close  */
+/* best seller close  */
+/* pasta open  */
+.col-5 {
+    width: 50%;
+}
+
+#pasta {
+    background-image: url(/image/pastalicious-back.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#pasta .pasta-content {
+    align-content: center;
+
+}
+
+#pasta .pasta-h1 {
+    font-size: 125px;
+    color: #d87663;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+}
+
+.pasta-p {
+    font-size: 30px;
+    color: #3a3a3a;
+    font-weight: 400;
+    font-family: "Montserrat";
+
+    padding: 40px 0px;
+}
+
+.pasta-content .pasta-btn button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #d87663;
+
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    cursor: pointer;
+}
+
+/* pasta close  */
+/* title open  */
+#title {
+    background-image: url(/image/title-back.png);
+    padding: 100px 0px;
+}
+
+.title-content {
+    padding: 50px 0px;
+}
+
+.title-content .title-h2 {
+    font-size: 75px;
+    color: #d87663;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+}
+
+.title-content .title-p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #3a3a3a;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+
+}
+
+.title-sqr {
+    /* justify-content: center; */
+    /* gap: 50px; */
+}
+
+.sqr {}
+
+.sqr-wp {
+    width: 70%;
+    margin: 0 auto;
+    padding: 25px 10px;
+    filter: drop-shadow(0 0 50px rgba(0, 0, 0, 0.5));
+    background-color: #d87663;
+    /* align-content: center; */
+}
+
+.sqr .sqr-h1 {
+    font-size: 67px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.sqr .sqr-h3 {
+    font-size: 67px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+    text-align: center;
+}
+
+/* title close  */
+/* bs2 opn  */
+#bs2 {
+    background-image: url(/image/bs2-back.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.bs2{
+    flex-direction: row-reverse;
+}
+#bs2 .bs2-content {
+    align-content: center;
+    padding: 0px 60px;
+}
+
+#bs2 .bs2-h1 {
+    font-size: 125px;
+    color: #d87663;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+}
+
+.bs2-p {
+    font-size: 30px;
+    color: #3a3a3a;
+    font-weight: 400;
+    font-family: "Montserrat";
+
+    padding: 40px 0px;
+}
+
+.bs2-content .bs2-btn button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #d87663;
+
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    cursor: pointer;
+
+    border: none;
+}
+
+/* bs2 close  */
